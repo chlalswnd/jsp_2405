@@ -17,14 +17,18 @@
 // 	데이터베이스 서버나 네트워크 오류가 발생할수 있기에 예외처리
 		try{
 // 			연결정보 => 자기 pc에 포트: 3306, database : atom
+// 			String url = "jdbc:mysql://localhost:3306/atom";
 			String url = "jdbc:oracle:thin:@localhost:1521:xe";
 // 			데이터베이스 아이디
+// 			String user = "bts";
 			String user = "scott";
 // 			데이터베이스 비밀번호
+// 			String password = "1234";
 			String password = "tiger";
 
 // 			mysql jdbc 드라이버 로딩
 // 			Class.forName("com.mysql.jdbc.Driver");
+// 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 // 			getConnection 메소드로 데이터베이스 정보를 통해서 db 연결
 			conn = DriverManager.getConnection(url, user, password);
