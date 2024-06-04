@@ -42,7 +42,7 @@
 				<form method="post" action="updateProcessOracle.jsp">
 					아이디 :<input type="text" name="id" value="<%= id %>"><br>
 					이름 :<input type="text" name="name" value="<%= rs.getString("name") %>"><br>
-					회원등급 :<input type="text" name="nclass" value="<%= rs.getString("class") %>"><br>
+					회원등급 :<input type="text" name="mclass" value="<%= rs.getString("class") %>"><br>
 					전화번호 :<input type="text" name="tel" value="<%= rs.getString("tel") %>"><br>
 					<input type="submit" value="수정">
 					<a href="viewMemberOracle.jsp">목록보기</a>
